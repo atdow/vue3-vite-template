@@ -1,3 +1,10 @@
+/*
+ * @Author: atdow
+ * @Date: 2021-04-26 17:24:34
+ * @LastEditors: null
+ * @LastEditTime: 2021-04-26 17:32:00
+ * @Description: file content
+ */
 import '/@/design/index.less';
 import 'virtual:windi.css';
 
@@ -15,10 +22,7 @@ import { registerGlobComp } from '/@/components/registerGlobComp';
 // Register icon Sprite
 import 'vite-plugin-svg-icons/register';
 
-// Do not introduce` on-demand in local development?
-// In the local development for on-demand introduction, the number of browser requests will increase by about 20%.
-// Which may slow down the browser refresh.
-// Therefore, all are introduced in local development, and only introduced on demand in the production environment
+// 加快开发模式的速度
 if (import.meta.env.DEV) {
   import('ant-design-vue/dist/antd.less');
 }
